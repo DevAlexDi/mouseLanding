@@ -366,7 +366,43 @@ footer {
         }
     }
 }
-
+.sec-lvl-4{
+    position: relative;
+    z-index: 7;
+     background: linear-gradient(to top,#403b8e , #29a7bd);
+    padding: 30px 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: calc(100% - 1px);
+        left: 0;
+        width: 100%;
+        height: 240px;
+        background-image: url(../img/waves/sec-4-top.svg);
+        background-position: bottom left;
+        background-size: contain;
+        background-repeat: repeat-x;
+        pointer-events: none;
+    }
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+       top: calc(100% - 1px);
+        left: 0;
+        width: 100%;
+        height: 240px;
+        background-image: url(../img/waves/sec-4-bott.svg);
+        background-position: top left;
+        background-size: contain;
+        background-repeat: repeat-x;
+         pointer-events: none;
+    }
+    &__flex{
+        display: flex;
+    }
+}
 .sec-lvl-2{
     position: relative;
     z-index: 7;
