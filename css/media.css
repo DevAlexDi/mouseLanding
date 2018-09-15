@@ -282,9 +282,6 @@
   .main-baner__content .arr-text {
     max-width: 290px; }
 
-  .sec-lvl-2__flex__right {
-    display: none; }
-
   .sec-lvl-2__flex__left {
     width: 100%; }
 
@@ -430,6 +427,9 @@
     display: none; }
 
   .cloud-1, .cloud-2, .cloud-3 {
-    display: none; } }
+    display: none; }
+
+  .sec-lvl-2__flex__right {
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=media.css.map */
