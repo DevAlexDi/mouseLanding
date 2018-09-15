@@ -8,48 +8,67 @@
     <title>Mouse</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800" rel="stylesheet">
+     <link href="css/slick.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/media.css" rel="stylesheet"> 
     
 </head>
 
 <body>
-    <section class="sec-all-content">
-        <section class="main-baner">
-            <div class="menu-wrapp">
-                <div class="main-m-w">
-                    <div class="flex-menu">
-                        <div class="flex-menu__logo">
-                            <img src="img/logo-img.svg" class="img-responsive" alt="">
-                            <img src="img/logo-text.svg" class="img-responsive" alt="">
-                        </div>
-                        <nav class="menu">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="main-menu">
-                                <ul class="menu__list">
-                                    <li class="menu__list__item">
-                                        <span class="menu__list__item__link">HOME</span>
-                                    </li>
-                                    <li class="menu__list__item">
-                                        <span class="menu__list__item__link">ABOUT MOUSE</span>
-                                    </li>
-                                    <li class="menu__list__item">
-                                        <span class="menu__list__item__link">CONTACT US</span>
-                                    </li>
-                                    <li class="menu__list__item">
-                                        <span class="menu__list__item__link">FAQs</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
+    <div class="menu-wrapp">
+        <div class="main-m-w">
+            <div class="flex-menu">
+                <div class="flex-menu__logo">
+                    <img src="img/logo-img.svg" class="img-responsive" alt="">
+                    <img src="img/logo-text.svg" class="img-responsive" alt="">
+                </div>
+                <nav class="menu">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="menu__list">
+                            <li class="menu__list__item">
+                                <a href="#home" class="menu__list__item__link js-scroll">HOME</a>
+                            </li>
+                            <li class="menu__list__item">
+                                <a href="#about" class="menu__list__item__link js-scroll">ABOUT MOUSE</a>
+                            </li>
+                            <li class="menu__list__item">
+                                <a href="#contact" class="menu__list__item__link js-scroll">CONTACT US</a>
+                            </li>
+                            <li class="menu__list__item">
+                                <a href="#faq" class="menu__list__item__link js-scroll">FAQs</a>
+                            </li>
+                        </ul>
                     </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <section class="sec-all-content">
+        <section class="main-baner" id="home">
+<!--
+            <div class="cloud-1"></div>
+            <div class="cloud-2"></div>
+            <div class="cloud-3"></div>
+-->
+            <div class="slider-baner">
+                
+                <div class="one-slide" style="background-image: url(img/bg-baner.jpg);">
+                    
+                </div>
+                <div class="one-slide" style="background-image: url(img/bg-baner-2.jpg);">
+                    
+                </div>
+                <div class="one-slide" style="background-image: url(img/bg-baner-3.jpg);">
+                    
                 </div>
             </div>
+            
             <div class="main-baner__content">
                 <div class="main-m-w">
                     <img src="img/live-shows-text.svg" class="img-responsive live-shows" alt="">
@@ -68,7 +87,7 @@
         </section>
         
         <!---->
-        <section class="sec-lvl-2">
+        <section class="sec-lvl-2 waves-style" id="about">
             <div class="main-m-w">
                 <div class="sec-lvl-2__flex">
                     <div class="sec-lvl-2__flex__left">
@@ -79,11 +98,11 @@
                     <div class="sec-lvl-2__flex__right">
                         <div class="sec-lvl-2__flex__right__abs-grad-1"></div>
                         <div class="sec-lvl-2__flex__right__tel-wr">
-                            <div class="tel">
+                            <div class="tel" data-parallax="{&quot;y&quot;: 70}">
                                 <img src="img/tel.png" class="img-responsive" alt="">
                             </div>
-                            <div class="shadow">
-                                <img src="img/shadow.png" class="img-responsive" alt="">
+                            <div class="shadow" data-parallax="{&quot;scaleY&quot;: 0.8, &quot;scaleX&quot;:0.8}" >
+                                <img src="img/shadow-2.png" class="img-responsive" alt="">
                             </div>
                         </div>
                     </div>
@@ -95,28 +114,39 @@
             <div class="main-m-w">
                 <div class="sec-lvl-3__flex">
                     <div class="sec-lvl-3__flex__left">
-                        <div class="f-w">
+                        <div class="f-w" data-parallax="{&quot;y&quot;: 50, &quot;rotateZ&quot;:17}">
                             <img src="img/ipad.png" class="img-responsive" alt="">
                         </div>
                     </div>
                     <div class="sec-lvl-3__flex__right">
                         <div class="sec-lvl-3__flex__right__text">
-                            <p><img src="img/mouse-text.svg" alt=""> gives Artists,  Venues & Organizers <span>guaranteed</span> attendance through crowdfunding & additional revenue through digitized bookings, ticket sales & VR/360 streaming video.</p>
+                            <div class="anim-none-padd">
+                                <div class="anim-none-padd">
+                                    <p><img src="img/mouse-text.svg" alt=""> gives Artists,  Venues & Organizers <span>guaranteed</span> attendance through crowdfunding & additional revenue through digitized bookings, ticket sales & VR/360 streaming video.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="sec-lvl-4">
+        <section class="sec-lvl-4 waves-style">
             <div class="main-m-w">
                 <div class="sec-lvl-4__flex">
                     <div class="sec-lvl-4__flex__left">
                         <div class="sec-lvl-4__flex__left__text">
-                            <p><img src="img/mouse-text.svg" alt=""> seeks to <span>disrupt</span> the Music Industry by giving Fans a direct influence over the next Artist coming to their town while enjoying the Live Concert Experience from anywhere in the world through VR/360 video.</p>
+                            <p><img src="img/mouse-text.svg" alt=""> lets Artists & Venues personalize a public profile with photos, songs & video performances, plus, grant <span>private access</span> to their rates, calendar, riders & specs.</p>
                         </div>
                     </div>
                     <div class="sec-lvl-4__flex__right">
-                        
+                        <div class="circle">
+                            <div class="circle__left">
+                                <img data-parallax="{&quot;y&quot;: 50}" src="img/iphone-left.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="circle__right">
+                                <img data-parallax="{&quot;y&quot;: -50}" src="img/iphone-right.png" class="img-responsive" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -127,18 +157,45 @@
                 <div class="sec-lvl-3__flex">
                     <div class="sec-lvl-3__flex__left">
                         <div class="f-w">
-                            <img src="img/macbook-pro.png" class="img-responsive" alt="">
+                            <img src="img/macbook-pro.png" class="img-responsive z-index-mac" alt="">
+                            <div class="dots-mac-book"></div>
                         </div>
                     </div>
                     <div class="sec-lvl-3__flex__right">
                         <div class="sec-lvl-3__flex__right__text">
-                            <p><img src="img/mouse-text.svg" alt=""> simplifies & digitizes the event production experience for Artists, Venues, & Organizers while providing <span>easy communication</span> and guarantees to all parties.</p>
+                            <div class="uniq-anim">
+                                <p><img src="img/mouse-text.svg" alt=""> simplifies & digitizes the event production experience for Artists, Venues, & Organizers while providing <span>easy communication</span> and guarantees to all parties.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="sec-lvl-7">
+        <section class="sec-lvl-6 waves-style" id="contact">
+            <div class="for-dots">
+                <div class="main-m-w">
+                    <div class="sec-lvl-6__flex">
+                        <div class="sec-lvl-6__flex__left">
+                            <div class="img-mouse">
+                                <img src="img/logo-img.svg" class="img-responsive img-mouse__logo-1" alt="">
+                                <img src="img/mouse-text.svg" class="img-responsive img-mouse__logo-2" alt="">
+                            </div>
+                        </div>
+                        <div class="sec-lvl-6__flex__right">
+                            <div class="centered">
+                                <p class="sec-lvl-6__flex__right__p">Want to get notified when we launch?</p>
+                                <div class="flex-butt">
+                                    <a href="#" class="butt">
+                                        <span>Just tell us about yourself.</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-lvl-7" id="faq">
             <div class="main-m-w">
                 <h3>QUESTIONS?</h3>
                 <div class="sec-lvl-7__flex">
@@ -216,7 +273,7 @@
                             </div>
                             <div class="one-soc">
                                 <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
                                         <g>
                                             <g>
                                                 <path d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411    c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513  c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101    c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104    c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194    c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485    c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" fill="#FFFFFF"></path>
@@ -238,7 +295,7 @@
                             </div>
                             <div class="one-soc">
                                 <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 438.542 438.543" style="enable-background:new 0 0 438.542 438.543;" xml:space="preserve">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 438.542 438.543" style="enable-background:new 0 0 438.542 438.543;" xml:space="preserve">
                                         <g>
                                             <path d="M288.078,367.164c-12.748,0-23.887-2.95-33.4-8.85c-7.427-4.381-12.368-10.089-14.842-17.132   c-2.673-6.852-4.001-23.223-4.001-49.115V179.58h103.921v-68.806H235.834V0h-62.53c-2.856,22.458-7.992,41.109-15.415,55.963   c-7.424,14.655-17.227,27.218-29.408,37.685c-12.183,10.282-26.934,18.276-44.255,23.984v61.955h48.535v153.889   c0,20.365,2.096,35.69,6.28,45.967c3.999,10.283,11.519,20.272,22.557,29.981c11.419,9.514,24.554,16.652,39.399,21.406   c15.418,5.14,33.12,7.713,53.105,7.713c18.274,0,34.735-1.813,49.392-5.428c14.466-3.237,31.409-9.424,50.823-18.562V345.46   C332.425,359.933,310.349,367.164,288.078,367.164z" fill="#FFFFFF"></path>
                                         </g>
@@ -247,7 +304,7 @@
                             </div>
                             <div class="one-soc">
                                 <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 96.828 96.827" style="enable-background:new 0 0 96.828 96.827;" xml:space="preserve">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 96.828 96.827" style="enable-background:new 0 0 96.828 96.827;" xml:space="preserve">
                                         <g>
                                             <g>
                                                 <path d="M62.617,0H39.525c-10.29,0-17.413,2.256-23.824,7.552c-5.042,4.35-8.051,10.672-8.051,16.912    c0,9.614,7.33,19.831,20.913,19.831c1.306,0,2.752-0.134,4.028-0.253l-0.188,0.457c-0.546,1.308-1.063,2.542-1.063,4.468    c0,3.75,1.809,6.063,3.558,8.298l0.22,0.283l-0.391,0.027c-5.609,0.384-16.049,1.1-23.675,5.787    c-9.007,5.355-9.707,13.145-9.707,15.404c0,8.988,8.376,18.06,27.09,18.06c21.76,0,33.146-12.005,33.146-23.863    c0.002-8.771-5.141-13.101-10.6-17.698l-4.605-3.582c-1.423-1.179-3.195-2.646-3.195-5.364c0-2.672,1.772-4.436,3.336-5.992    l0.163-0.165c4.973-3.917,10.609-8.358,10.609-17.964c0-9.658-6.035-14.649-8.937-17.048h7.663c0.094,0,0.188-0.026,0.266-0.077    l6.601-4.15c0.188-0.119,0.276-0.348,0.214-0.562C63.037,0.147,62.839,0,62.617,0z M34.614,91.535    c-13.264,0-22.176-6.195-22.176-15.416c0-6.021,3.645-10.396,10.824-12.997c5.749-1.935,13.17-2.031,13.244-2.031    c1.257,0,1.889,0,2.893,0.126c9.281,6.605,13.743,10.073,13.743,16.678C53.141,86.309,46.041,91.535,34.614,91.535z     M34.489,40.756c-11.132,0-15.752-14.633-15.752-22.468c0-3.984,0.906-7.042,2.77-9.351c2.023-2.531,5.487-4.166,8.825-4.166    c10.221,0,15.873,13.738,15.873,23.233c0,1.498,0,6.055-3.148,9.22C40.94,39.337,37.497,40.756,34.489,40.756z" fill="#FFFFFF"></path>
@@ -259,7 +316,7 @@
                             </div>
                             <div class="one-soc">
                                 <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
                                         <g>
                                             <path id="YouTube__x28_alt_x29_" d="M90,26.958C90,19.525,83.979,13.5,76.55,13.5h-63.1C6.021,13.5,0,19.525,0,26.958v36.084   C0,70.475,6.021,76.5,13.45,76.5h63.1C83.979,76.5,90,70.475,90,63.042V26.958z M36,60.225V26.33l25.702,16.947L36,60.225z" fill="#FFFFFF"></path>
                                         </g>
@@ -312,6 +369,8 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/js-anim.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/scripts.js"></script>
    
 </body>
