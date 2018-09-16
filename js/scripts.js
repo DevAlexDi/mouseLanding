@@ -28,7 +28,11 @@ $(document).ready(function () {
             return false;
         }
     });
-    
+    $('.scroll-sec-2').click(function(){
+        $('body, html').animate({
+                scrollTop: $('.sec-lvl-2').offset().top - 70
+            }, 500);
+    });
     
 });
     

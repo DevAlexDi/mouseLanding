@@ -60,7 +60,8 @@ body{
             .closer{
                 color: #fff;
                 text-align: center;
-                font-size: 54px;
+                font-size: 40px;
+                padding-top: 10px;
                 position: relative;
                 z-index: 10;
                 margin-bottom: 0;
@@ -76,6 +77,8 @@ body{
             img{
                 margin: 0 auto;
                 position: relative;
+                cursor: pointer;
+                animation: move-tel 2s infinite;
             }
         }
     }
@@ -111,6 +114,9 @@ body{
         background-position: top center;
         height: 100%;
         position: relative;
+        &.center-pos{
+            background-position: center;
+        }
     }
 }
 //.cloud-1 {
@@ -182,7 +188,7 @@ body{
         transform: translateY(0);
     }
     50%{
-        transform: translateY(70px);
+        transform: translateY(40px);
     }
     100% {
       transform: translateY(0);
@@ -286,7 +292,7 @@ body{
                     }
                 }
                 p{
-                    font-size: 48px;
+                    font-size: 40px;
                     color: #fff;
                     margin-bottom: 50px;
                     
@@ -687,7 +693,7 @@ footer {
                     transition: transform 0.85s cubic-bezier(0.39, 0.575, 0.565, 1),opacity 0.3s linear,-webkit-transform 0.85s cubic-bezier(0.39, 0.575, 0.565, 1);
                     transform: translateY(70px);
                     opacity: 0;
-                    font-size: 48px;
+                    font-size: 40px;
                     color: #fff;
                     margin-bottom: 50px;
                     a,span{
@@ -887,7 +893,7 @@ footer {
                     transition: transform 0.85s cubic-bezier(0.39, 0.575, 0.565, 1),opacity 0.3s linear,-webkit-transform 0.85s cubic-bezier(0.39, 0.575, 0.565, 1);
                     transform: translateY(70px);
                     opacity: 0;
-                    font-size: 48px;
+                    font-size: 40px;
                     color: #fff;
                     margin-bottom: 50px;
                     a,span{

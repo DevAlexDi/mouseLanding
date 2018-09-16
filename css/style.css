@@ -48,7 +48,8 @@ body {
       .main-baner__content .arr-text .closer {
         color: #fff;
         text-align: center;
-        font-size: 54px;
+        font-size: 40px;
+        padding-top: 10px;
         position: relative;
         z-index: 10;
         margin-bottom: 0; }
@@ -62,7 +63,10 @@ body {
               transition-delay: .85s; }
       .main-baner__content .arrow-down img {
         margin: 0 auto;
-        position: relative; }
+        position: relative;
+        cursor: pointer;
+        -webkit-animation: move-tel 2s infinite;
+                animation: move-tel 2s infinite; }
   .main-baner[data-anim=true] .main-baner__content .live-shows {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -90,14 +94,16 @@ body {
     background-position: top center;
     height: 100%;
     position: relative; }
+    .slider-baner .one-slide.center-pos {
+      background-position: center; }
 
 @-webkit-keyframes move-tel {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0); }
   50% {
-    -webkit-transform: translateY(70px);
-            transform: translateY(70px); }
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px); }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
@@ -107,8 +113,8 @@ body {
     -webkit-transform: translateY(0);
             transform: translateY(0); }
   50% {
-    -webkit-transform: translateY(70px);
-            transform: translateY(70px); }
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px); }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
@@ -227,7 +233,7 @@ body {
             -webkit-transform: none;
                     transform: none; }
         .sec-lvl-3__flex__right__text p {
-          font-size: 48px;
+          font-size: 40px;
           color: #fff;
           margin-bottom: 50px; }
           .sec-lvl-3__flex__right__text p span {
@@ -580,7 +586,7 @@ footer {
           -webkit-transform: translateY(70px);
                   transform: translateY(70px);
           opacity: 0;
-          font-size: 48px;
+          font-size: 40px;
           color: #fff;
           margin-bottom: 50px; }
           .sec-lvl-4__flex__left__text p a, .sec-lvl-4__flex__left__text p span {
@@ -772,7 +778,7 @@ footer {
           -webkit-transform: translateY(70px);
                   transform: translateY(70px);
           opacity: 0;
-          font-size: 48px;
+          font-size: 40px;
           color: #fff;
           margin-bottom: 50px; }
           .sec-lvl-2__flex__left__text p a, .sec-lvl-2__flex__left__text p span {
