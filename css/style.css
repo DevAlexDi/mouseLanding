@@ -233,7 +233,7 @@ body {
             -webkit-transform: none;
                     transform: none; }
         .sec-lvl-3__flex__right__text p {
-          font-size: 40px;
+          font-size: 35px;
           color: #fff;
           margin-bottom: 50px; }
           .sec-lvl-3__flex__right__text p span {
@@ -586,7 +586,7 @@ footer {
           -webkit-transform: translateY(70px);
                   transform: translateY(70px);
           opacity: 0;
-          font-size: 40px;
+          font-size: 35px;
           color: #fff;
           margin-bottom: 50px; }
           .sec-lvl-4__flex__left__text p a, .sec-lvl-4__flex__left__text p span {
@@ -700,7 +700,7 @@ footer {
         width: 100%;
         max-width: 501px; }
       .sec-lvl-6__flex__right__p {
-        font-size: 60px;
+        font-size: 50px;
         text-align: center;
         color: #fff;
         margin-bottom: 50px; }
@@ -778,7 +778,7 @@ footer {
           -webkit-transform: translateY(70px);
                   transform: translateY(70px);
           opacity: 0;
-          font-size: 40px;
+          font-size: 35px;
           color: #fff;
           margin-bottom: 50px; }
           .sec-lvl-2__flex__left__text p a, .sec-lvl-2__flex__left__text p span {
