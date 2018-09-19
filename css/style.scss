@@ -917,11 +917,11 @@ footer {
             &__abs-grad-1{
                 position: absolute;
                 top: 50%;
-                left: 0;
+                    left: -100px;
                 width: 800px;
                 height: 100%;
                 background: radial-gradient(closest-side, #e16390, #d52463);
-                transform: translateY(-50%);
+                transform: translateY(-54%);
             }
             &__tel-wr{
                 position: relative;

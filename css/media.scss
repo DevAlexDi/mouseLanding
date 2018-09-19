@@ -84,6 +84,7 @@
     .sec-lvl-2__flex__right__abs-grad-1{
         width: 400px;
         height: 100%;
+        left: 0;
     }
     
     .sec-lvl-2__flex__right__tel-wr{
@@ -113,6 +114,7 @@
         max-width: 225px;
 
     }
+    
     .sec-lvl-6__flex__left .img-mouse__logo-1 {
         width: 224px;
     }
@@ -489,5 +491,8 @@
     .main-baner__content .arr-text .closer{
         padding-top: 0;
     }
-    
+    .sec-lvl-2__flex__right__abs-grad-1{
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
 }
