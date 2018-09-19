@@ -32,7 +32,7 @@
     
     .sec-lvl-2__flex__right__abs-grad-1{
         width: 640px;
-    height: 640px;
+    height: 100%;
     }
     .sec-lvl-4__flex__left__text p{
         font-size: 40px;
@@ -83,7 +83,7 @@
     }
     .sec-lvl-2__flex__right__abs-grad-1{
         width: 400px;
-        height: 400px;
+        height: 100%;
     }
     
     .sec-lvl-2__flex__right__tel-wr{
@@ -485,6 +485,9 @@
     }
     .sec-lvl-2__flex__right{
         margin: 0 auto;
+    }
+    .main-baner__content .arr-text .closer{
+        padding-top: 0;
     }
     
 }
